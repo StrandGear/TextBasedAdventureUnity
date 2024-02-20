@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ef099bb7412ea47a27e5c7a47f8e1d, type: 3}
+  m_Name: 11_Tavern
+  m_EditorClassIdentifier: 
+  description: "You finally see him. A redhair man with ugly full face smile and
+    lustful sight. Celebration is tomorrow but he is already drunk. \n\"You killed
+    my dad\", you point your sword towards him. \" (next)"
+  roomName: Tavern
+  roomPicture: {fileID: 21300000, guid: afd12b545a984f94ba0e8f102c5dccb8, type: 3}
+  exits:
+  - keyString: outside
+    exitDescription: '>go outside'
+    valueRoom: {fileID: 11400000, guid: 11e1101af9b38764aa6c4144b789db34, type: 2}
+    cost: 1
+  - keyString: academy
+    exitDescription: '>Back to academy (go academy)'
+    valueRoom: {fileID: 11400000, guid: 1c9ee42cd6354fa45aad9681b4c33a4d, type: 2}
+    cost: 1
+  roomNode:
+    name: 
+  currentEventNodeID: 0
+  hasCharacter: 0
+  localCharacter: {fileID: 11400000, guid: d548ef82fbb8ece41961f56f30100440, type: 2}

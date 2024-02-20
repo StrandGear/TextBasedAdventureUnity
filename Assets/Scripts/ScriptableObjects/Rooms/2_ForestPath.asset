@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ef099bb7412ea47a27e5c7a47f8e1d, type: 3}
+  m_Name: 2_ForestPath
+  m_EditorClassIdentifier: 
+  description: Beautiful trees are looming over your head. Birds are singing all
+    around and fresh air covers your face. In the distance you can see town's gates
+    and hear more noises.
+  roomName: Forest
+  roomPicture: {fileID: 21300000, guid: 9844ebf0edab0d24892d3c0894978d5a, type: 3}
+  exits:
+  - keyString: straight
+    exitDescription: '>Go towards gate (go straight)'
+    valueRoom: {fileID: 11400000, guid: a3644d3531e255946afa670ce6aa775a, type: 2}
+    cost: 1
+  - keyString: left
+    exitDescription: '>Take a small walk around (go left)'
+    valueRoom: {fileID: 11400000, guid: 337974b43e35d694d942f115dbbdf186, type: 2}
+    cost: 1
+  roomNode:
+    name: Forest
+  currentEventNodeID: 0
+  hasCharacter: 0
+  localCharacter: {fileID: 0}

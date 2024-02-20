@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6940e31bb8f89b42a72a8ae4f6caea4, type: 3}
+  m_Name: Asterion
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 8855d9f751afd0d49836e40737745f4a, type: 3}
+  decisionTree:
+  - treeNode:
+      nodeID: 0
+      Text: He looks very young, but maybe he knows something about man who killed
+        my dad. Ask him?
+    parentID: 0
+    isLeftChild: 0
+  - treeNode:
+      nodeID: 0
+      Text: A guy is trying to pretend that hi didn't look at you and continues going
+        his way.
+    parentID: 0
+    isLeftChild: 0
+  - treeNode:
+      nodeID: 0
+      Text: '"Oh... That might be Mr.Rodrigo. A red hair man? He was my commander
+        last year. Are you one of his fan?"'
+    parentID: 0
+    isLeftChild: 1
+  - treeNode:
+      nodeID: 0
+      Text: '"Oh.. Sorry, I can''t give you an information about him. Seems like
+        after last time we are not good friends with him anymore. Goodbye."'
+    parentID: 2
+    isLeftChild: 1
+  - treeNode:
+      nodeID: 0
+      Text: '"I feel you... I hate this man. On last mission he just released thives
+        because they paid him, but no one believes me! He used me and now I am dishonored
+        in my heart. Do you have personal counts with him?" He exhales after you
+        noding your head. "I see. You know, if you wanna be better in fight with
+        him you should be fast. He wears a heavy armor so he is bad at dodging quick
+        attacks. Sorry I didn''t see him fighting a lot. Well, wish you luck in your
+        deal, my duty calls me!"'
+    parentID: 2
+    isLeftChild: 0
+  currentEventNodeID: 0
+  dialogueIsOver: 0

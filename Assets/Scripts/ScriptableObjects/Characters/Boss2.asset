@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6940e31bb8f89b42a72a8ae4f6caea4, type: 3}
+  m_Name: Boss2
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: d747d6fbb195e434fb1b05c13eb135d2, type: 3}
+  decisionTree:
+  - treeNode:
+      nodeID: 0
+      Text: He swings his sword and misses. He finds it funny and waits for your
+        turn. Do you want to hit his arm (y) or leg (n)?
+    parentID: 0
+    isLeftChild: 0
+  - treeNode:
+      nodeID: 0
+      Text: You hit his arm but he just pushes your sword away. Then he hits you
+        in your shoulder "Next time it's gonna be your head Haha". He swings his
+        sword again but now above your head" Do you wanna push him with the handle
+        of you sword in chest (y) or shoulder poke with your hand (n)?
+    parentID: 0
+    isLeftChild: 1
+  - treeNode:
+      nodeID: 0
+      Text: You hit him in knee and he screams. His eyes are getting red. "You knew!
+        Bastard!" He swings his sword about your head" Do you wanna push him with
+        the handle of you sword in chest (y) or shoulder poke with your hand (n)?
+    parentID: 0
+    isLeftChild: 0
+  - treeNode:
+      nodeID: 0
+      Text: You hit his chest but he just cough and chops your head off. Congratulations.
+        You died, but he will live. Tomorrow he will celebrate something he doesn't
+        deserve and plenty other innocent citizens will die from his hand.
+    parentID: 1
+    isLeftChild: 1
+  - treeNode:
+      nodeID: 0
+      Text: You hit his shoulder with and spell on your finger start working. Opponent
+        is stunned, he dropped his sword and holds his ears almost crying. What are
+        you gonna do - stand up and hit him full power (y) or quickly swing your
+        sword and cut his leg (n)?
+    parentID: 1
+    isLeftChild: 0
+  - treeNode:
+      nodeID: 0
+      Text: You hit his shoulder with and spell on your finger start working. Opponent
+        is stunned, he dropped his sword and holds his ears almost crying. What are
+        you gonna do - stand up and hit him full power (y) or quickly swing your
+        sword and cut his leg (n)?
+    parentID: 2
+    isLeftChild: 0
+  - treeNode:
+      nodeID: 0
+      Text: You hit his chest but he just cough and pushes you to the ground with
+        his foot. What are you gonna do - stand up and hit him full power (y) or
+        quickly swing your sword and cut his leg (n)?
+    parentID: 2
+    isLeftChild: 1
+  - treeNode:
+      nodeID: 0
+      Text: You stand up and swing your sword as hard as possible to cut his neck.
+        He holds his sword up and reflect your hit. Your swords are crossed and he
+        presses so hard that you falls on your knee and moan. He pushes you and takes
+        a knife out of his belt. Your throat is cut and you are dead. Tomorrow he
+        will be celebrating what he didn't deserve and many people will die from
+        his hand.
+    parentID: 6
+    isLeftChild: 1
+  - treeNode:
+      nodeID: 0
+      Text: You swing your sword  fast and cut his foot. He falls down and screams.
+        You get up and make a final hit to kill. You put your sword in his chest
+        and his heart doesn't beat anymore.
+    parentID: 6
+    isLeftChild: 0
+  - treeNode:
+      nodeID: 0
+      Text: You get up and make a final hit to kill. You put your sword in his chest
+        and his heart doesn't beat anymore.
+    parentID: 5
+    isLeftChild: 1
+  - treeNode:
+      nodeID: 0
+      Text: You swing your sword  fast and cut his foot. He falls down and screams.
+        You get up and make a final hit to kill. You put your sword in his chest
+        and his heart doesn't beat anymore.
+    parentID: 5
+    isLeftChild: 0
+  currentEventNodeID: 0
+  dialogueIsOver: 0

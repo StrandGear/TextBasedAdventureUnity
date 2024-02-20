@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ef099bb7412ea47a27e5c7a47f8e1d, type: 3}
+  m_Name: 6_1_AcademyFront
+  m_EditorClassIdentifier: 
+  description: A beautiful majestic castle is facing you. Here you can see sparkles
+    of magics fights are training, piles of books on the benches under trees, everyone
+    is armored. Everything is over neat and definitely gives you a feeling that it's
+    a higher status place, not for someone like you. People are smiling, laughing,
+    training, reading. Windows show sneaks of big library inside. Your gut is pleased.
+  roomName: Yard
+  roomPicture: {fileID: 21300000, guid: 21f893989e9111047b930b3e955b65d8, type: 3}
+  exits:
+  - keyString: around
+    exitDescription: '>Go around (go around)'
+    valueRoom: {fileID: 11400000, guid: e3b10e25da87a5e48a42e0f7151a2aa4, type: 2}
+    cost: 2
+  - keyString: inside
+    exitDescription: '>Go inside academy (go inside)'
+    valueRoom: {fileID: 11400000, guid: d7fd54baf846d544d8939069763f948e, type: 2}
+    cost: 1
+  - keyString: back
+    exitDescription: '>Go back to the bridge (go back)'
+    valueRoom: {fileID: 11400000, guid: 10063b589f44db6409543a650445d802, type: 2}
+    cost: 1
+  roomNode:
+    name: Yard
+  currentEventNodeID: 0
+  hasCharacter: 0
+  localCharacter: {fileID: 0}

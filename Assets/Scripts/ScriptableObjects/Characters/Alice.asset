@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6940e31bb8f89b42a72a8ae4f6caea4, type: 3}
+  m_Name: Alice
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 021e4dc9efc990a4692763fa2b31f671, type: 3}
+  decisionTree:
+  - treeNode:
+      nodeID: 0
+      Text: A woman is holding a tiny book and casts some spells. Should I ask her
+        about man with skull tattoo who killed your dad?
+    parentID: 0
+    isLeftChild: 0
+  - treeNode:
+      nodeID: 0
+      Text: She looked at you, closed her book and went away.
+    parentID: 0
+    isLeftChild: 0
+  - treeNode:
+      nodeID: 0
+      Text: '"With skull tattoo... I think it''s Rodrigo you''re talking about. A
+        very bad manner knight. I despise him. He is very strong though, but once
+        I have made him a critical hit. You wann know how?'
+    parentID: 0
+    isLeftChild: 1
+  - treeNode:
+      nodeID: 0
+      Text: '"Great. Then wish you good luck with whatever business you have with
+        him."'
+    parentID: 2
+    isLeftChild: 0
+  - treeNode:
+      nodeID: 0
+      Text: She pushes you away with fingers. You're stunned. "He can't resist to
+        humming spell. Do you want me to cast this spell on your fingers?"
+    parentID: 2
+    isLeftChild: 1
+  - treeNode:
+      nodeID: 0
+      Text: '"Why even ask...", she closes her book and goes away.'
+    parentID: 4
+    isLeftChild: 0
+  - treeNode:
+      nodeID: 0
+      Text: She casts a spell on your fingers. "You need to press these two fingers
+        on his shoulder. He will hear humming noise in his head and won't be able
+        to move. Thank me later. I wish you luck with your business. Let the light
+        guide you", she left the garden.
+    parentID: 4
+    isLeftChild: 1
+  currentEventNodeID: 0
+  dialogueIsOver: 0

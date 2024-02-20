@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ef099bb7412ea47a27e5c7a47f8e1d, type: 3}
+  m_Name: 6_2_AcademyGarden
+  m_EditorClassIdentifier: 
+  description: "The castle's garden is a colorful sanctuary, with vibrant flowers,
+    lush greenery, and winding paths. A bubbling fountain serves as the centerpiece,
+    while benches offer moments of quiet reflection. Against the backdrop of the
+    majestic castle, it's a tranquil haven where nature's beauty reigns supreme.
+    (next)\r"
+  roomName: Garden
+  roomPicture: {fileID: 21300000, guid: 48051449eb2bce440bb20127b789033f, type: 3}
+  exits:
+  - keyString: inside
+    exitDescription: '>Go inside the Academy (go inside)'
+    valueRoom: {fileID: 11400000, guid: d7fd54baf846d544d8939069763f948e, type: 2}
+    cost: 1
+  - keyString: back
+    exitDescription: '>Go back to the fron yard (go back)'
+    valueRoom: {fileID: 11400000, guid: d0578dc88fe2cde40be4b9f2753668c5, type: 2}
+    cost: 0
+  roomNode:
+    name: Garden
+  currentEventNodeID: 0
+  hasCharacter: 0
+  localCharacter: {fileID: 11400000, guid: 77fc7bbada4b51e4dac251de9a444a21, type: 2}

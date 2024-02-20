@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ef099bb7412ea47a27e5c7a47f8e1d, type: 3}
+  m_Name: 5_AcademyBridge
+  m_EditorClassIdentifier: 
+  description: A massive stone walls seem very frightening. Very wide road is leading
+    to a good protected door. Knights are patroling on their horses so this stone
+    can hold several tons. Behind thick wall you can see tall towers and many flags.
+    (next)
+  roomName: AcademyBridge
+  roomPicture: {fileID: 21300000, guid: a7c94df47e5433c469edacb4eee8dbbb, type: 3}
+  exits:
+  - keyString: academy
+    exitDescription: '>Continue going to the academy (go academy)'
+    valueRoom: {fileID: 11400000, guid: d0578dc88fe2cde40be4b9f2753668c5, type: 2}
+    cost: 1
+  - keyString: market
+    exitDescription: '>Go back to market (go market)'
+    valueRoom: {fileID: 11400000, guid: 0f77669297fd1314f96d3bf4db490551, type: 2}
+    cost: 2
+  roomNode:
+    name: AcademyBridge
+  currentEventNodeID: 0
+  hasCharacter: 0
+  localCharacter: {fileID: 11400000, guid: 04a5c0095652c6a4fbd4e88e8a7f149c, type: 2}

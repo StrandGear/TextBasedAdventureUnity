@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ef099bb7412ea47a27e5c7a47f8e1d, type: 3}
+  m_Name: 8_Library
+  m_EditorClassIdentifier: 
+  description: "The knight's library in the castle is a majestic haven of wisdom
+    and heritage. Tall shelves adorned with ancient tomes line the walls, while soft
+    candlelight bathes the space in a warm glow. Plush chairs invite visitors to
+    linger and explore, while a grand oak table stands at the center, a symbol of
+    scholarly gatherings of knights past. Above a crackling fireplace hangs a tapestry
+    depicting the castle's founders, a reminder of the rich legacy that resides within
+    these walls. (next)\r"
+  roomName: Library
+  roomPicture: {fileID: 21300000, guid: 6a74c2fa7bb33a14883cf4e43c8352d9, type: 3}
+  exits:
+  - keyString: downstairs
+    exitDescription: '>Go back dowstairs (go downstairs)'
+    valueRoom: {fileID: 11400000, guid: d7fd54baf846d544d8939069763f948e, type: 2}
+    cost: 1
+  roomNode:
+    name: Library
+  currentEventNodeID: 0
+  hasCharacter: 0
+  localCharacter: {fileID: 11400000, guid: 87d30291973c99349b10878dc2fd7487, type: 2}
